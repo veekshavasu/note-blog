@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Noteblog</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+<nav class="navbar navbar-expand-md bg-dark navbar-dark">
+    <a class="navbar-brand" href="#">NOTE-BLOG</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+            <a class="nav-link" href="{% url 'login' %}"><b>Log_in</b></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'register' %}"><b>Register</b></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'admin1' %}"><b>About-Us</b></a>
+          
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="{% url 'feedback' %}"><b>Feedback</b></a>
+            
+        </li>
+        
+
+         
+      </ul>
+    </div>  
+  </nav>
+  <body style="background-color:#aaa;" >
+    <div id="demo" class="carousel slide" data-ride="carousel" style="background-color:#aaa; ">
+      <ul class="carousel-indicators">
+        <li data-target="#demo" data-slide-to="0"></li>
+        <li data-target="#demo" data-slide-to="1"></li>
+        <li data-target="#demo" data-slide-to="2"></li>
+      </ul>
+      <!-- The slideshow -->
+          <div class="carousel-inner">
+                <div class="carousel-item active">
+                      <center><img src="https://cdn.aarp.net/content/dam/aarp/money/budgeting_savings/2016/04/1140-yeager-sell-your-used-books.imgcache.rev6feda141288df73e8fd100822bb375ea.jpg" width="1000px" length="300px" ></center>
+                </div>
+                <div class="carousel-item">
+                      <center><img src="img.jpg" width="900" heigth="300"></center>
+                </div>
+                <div class="carousel-item">
+                     <center> <img src="https://friendsofdplcom.files.wordpress.com/2017/01/books.jpg?w=1200" width="1000" heigth="300" ></center>
+                </div>
+          </div>
+    </div>
+    <div>
+     <!-- Left and right controls -->
+      <a class="carousel-control-prev" href="" data-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </a>
+      <a class="carousel-control-next" href="" data-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </a>
+    </div>
+    <p>
+    <br></br>

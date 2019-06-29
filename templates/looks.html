@@ -1,0 +1,1669 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Noteblog</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+<nav class="navbar navbar-expand-md bg-dark navbar-dark">
+    <a class="navbar-brand" href="#">NOTE-BLOG</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+      <ul class="navbar-nav">
+        
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'register' %}"><b>Register</b></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'admin:index' %}"><b>About-Us</b></a>
+          
+        </li> 
+        
+          
+          
+        <li class="nav-item">
+            <a class="nav-link" href="{% url 'feedback' %}"><b>Feedback</b></a>
+                
+        </li> 
+        
+        
+        <li class="nav-item">
+                <a class="nav-link" href="{% url 'logout' %}"><b>Logout</b></a>
+                
+            </li>
+      </ul>
+    </div>  
+  </nav>
+
+
+  
+<div class="container">
+<h2>BRANCHES</h2>
+  <ul class="list-group">
+        <li class="list-group-item">
+            <div class="dropdown">
+                <button class="list-group-item list-group-item-action"  type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                   <b> Architecture</b>
+                </button>
+		<div class="container">
+			<div class="container">
+  <ul class="list-group">
+        <li class="list-group-item">
+            <div class="dropdown">
+                <button class="list-group-item list-group-item-action"  type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                   <b>First Semester</b>
+                </button>
+                <div class="dropdown-menu" aria-labelledby="Subjects">
+                    <a class="dropdown-item" href="#">Architectural design I</a>
+                    <a class="dropdown-item" href="#">Building materials and construction I</a>
+                    <a class="dropdown-item" href="#">Architectural graphics I</a>
+                    <a class="dropdown-item" href="#">Structural systems and behaviour I</a>
+                    <a class="dropdown-item" href="#">Worshop practise I</a>
+                    <a class="dropdown-item" href="#">Visual Arts</a>
+                    <a class="dropdown-item" href="#">Measured Drawing</a>
+                    <a class="dropdown-item" href="#">History of Architecture I</a>
+                </div>
+            	</div>
+            <div class="dropdown">
+                <button class="list-group-item list-group-item-action" type="button"  id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <b></a>Second Semester</b>
+                </button>
+                <div class="dropdown-menu" aria-labelledby="SEMESTERS">
+                    <a class="dropdown-item" href="#">Architectural design II</a>
+                    <a class="dropdown-item" href="#">Building materials and construction II</a>
+                    <a class="dropdown-item" href="#">Architectural graphics II</a>
+                    <a class="dropdown-item" href="#">Structural systems and behaviour II</a>
+                    <a class="dropdown-item" href="#">Worshop practise II</a>
+                    <a class="dropdown-item" href="#">Art Appreciciation</a>
+                    <a class="dropdown-item" href="#">History of Architecture II</a>
+                    <a class="dropdown-item" href="#">Theory of Design</a>
+                    <a class="dropdown-item" href="#">Kannada Kali</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button  class="list-group-item list-group-item-action" type="button" " id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <b>Third Semester</b>
+                </button>
+                <div class="dropdown-menu" aria-labelledby="SEMESTERS">
+                    <a class="dropdown-item" href="#">Architectural design III</a>
+                    <a class="dropdown-item" href="#">Building materials and construction III</a>
+                    <a class="dropdown-item" href="#">Computer Applications I</a>
+                    <a class="dropdown-item" href="#">Structural systems and behaviour III</a>
+                    <a class="dropdown-item" href="#">Climate responsive architecture</a>
+                    <a class="dropdown-item" href="#">History of architecture III</a>
+                    <a class="dropdown-item" href="#">Building services I</a>
+                    <a class="dropdown-item" href="#">Surveying and levelling</a>
+                    <a class="dropdown-item" href="#">Study tour I</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button  class="list-group-item list-group-item-action" type="button"  id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <b>Fourth Semester</b>
+                </button>
+                <div class="dropdown-menu" aria-labelledby="SEMESTERS">
+                    <a class="dropdown-item" href="#">Architectural design IV</a>
+                    <a class="dropdown-item" href="#">Building materials and construction IV</a>
+                    <a class="dropdown-item" href="#">Computer Applications II</a>
+                    <a class="dropdown-item" href="#">Structural systems and behaviour IV</a>
+                    <a class="dropdown-item" href="#">Human settlements and vernacular architecture</a>
+                    <a class="dropdown-item" href="#">History of architecture IV</a>
+                    <a class="dropdown-item" href="#">Building Services II</a>
+                    <a class="dropdown-item" href="#">Socially and economics</a>
+                    <a class="dropdown-item" href="#">Personality development skills</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="list-group-item list-group-item-action" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <b>Fifth Semester</b>
+                </button>
+                <div class="dropdown-menu" aria-labelledby="SEMESTERS">
+                    <a class="dropdown-item" href="#">Architectural design V</a>
+                    <a class="dropdown-item" href="#">Building materials and construction V</a>
+                    <a class="dropdown-item" href="#">Computer Applications III</a>
+                    <a class="dropdown-item" href="#">Landscape architecture</a>
+                    <a class="dropdown-item" href="#">History of architecture V</a>
+                    <a class="dropdown-item" href="#">Building estimation and specification</a>
+                    <a class="dropdown-item" href="#">Building Services III</a>
+		    <a class="dropdown-item" href="#">Structural systems and behaviour V</a> 
+                   <a class="dropdown-item" href="#">Study Tour II</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button  class="list-group-item list-group-item-action" type="button"  id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <b>Sixth Semester</b>
+                </button>
+                <div class="dropdown-menu" aria-labelledby="SEMESTERS">
+                    <a class="dropdown-item" href="#">Architectural design VI</a>
+                    <a class="dropdown-item" href="#">Working Drawing </a>
+                    <a class="dropdown-item" href="#">Interior Design</a>
+                    <a class="dropdown-item" href="#">History of architecture VI</a>
+                    <a class="dropdown-item" href="#">Sociology and economics</a>
+                    <a class="dropdown-item" href="#">Building services IV</a>
+                    <a class="dropdown-item" href="#">Elective I</a>
+                    <a class="dropdown-item" href="#">Constitution indian and professional ethics</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button  class="list-group-item list-group-item-action" type="button"  id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <b>Seventh Semester</b>
+                </button>
+                <div class="dropdown-menu" aria-labelledby="SEMESTERS">
+                    <a class="dropdown-item" href="#">Architectural design VII</a>
+                    <a class="dropdown-item" href="#">Eathquake resistant structures</a>
+                    <a class="dropdown-item" href="#">Research skills and project introduction</a>
+                    <a class="dropdown-item" href="#">Energy conscious architecture</a>
+                    <a class="dropdown-item" href="#">Proffesional Practise</a>
+                    <a class="dropdown-item" href="#">Urban and regional planning</a>
+                    <a class="dropdown-item" href="#">Elective II</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button  class="list-group-item list-group-item-action" type="button"  id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <b>Eight Semester</b>
+                </button>
+                <div class="dropdown-menu" aria-labelledby="SEMESTERS">
+                    <a class="dropdown-item" href="#">Architectural Thesis</a>
+                    <a class="dropdown-item" href="#"Elective III</a>
+                </div>
+            </div>
+                    </li>
+       
+    </ul>
+</div>
+
+
+
+            	</div>
+            <div class="dropdown">
+                <button class="list-group-item list-group-item-action" type="button"  id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <b></a>Biotechnlogy</b>
+                </button>
+                <div class="container">
+  <ul class="list-group">
+        <li class="list-group-item">
+            <div class="dropdown">
+                <button class="list-group-item list-group-item-action"  type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                   <b>First Semester</b>
+                </button>
+                <div class="dropdown-menu" aria-labelledby="Subjects">
+                    <a class="dropdown-item" href="#">Engineering Mathematics I</a>
+                    <a class="dropdown-item" href="#">Engineering Chemistry</a>
+                    <a class="dropdown-item" href="#">Foundations of computer science</a>
+                    <a class="dropdown-item" href="#">Foundations of Electronics Engineering</a>
+                    <a class="dropdown-item" href="#">Engineering Mechanics</a>
+                    <a class="dropdown-item" href="#">Communicative English</a>
+                    <a class="dropdown-item" href="#">Chemistry Lab</a>
+                    <a class="dropdown-item" href="#">Foundations of computer programming lab</a>
+                </div>
+            	</div>
+            <div class="dropdown">
+                <button class="list-group-item list-group-item-action" type="button"  id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <b></a>Second Semester</b>
+                </button>
+                <div class="dropdown-menu" aria-labelledby="SEMESTERS">
+                    <a class="dropdown-item" href="#">Engineering mathematicsII </a>
+                    <a class="dropdown-item" href="#">Engineering Physics</a>
+                    <a class="dropdown-item" href="#">Computer Aided Engineering drawing</a>
+                    <a class="dropdown-item" href="#">Foundations and Electrical engineering</a>
+                    <a class="dropdown-item" href="#">Foundations of mechanical Engineering</a>
+                    <a class="dropdown-item" href="#">Kannada</a>
+                    <a class="dropdown-item" href="#">Awareness to computer concepts</a>
+                    <a class="dropdown-item" href="#">Physics Lab</a>
+                    <a class="dropdown-item" href="#">Worshop Practise</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button  class="list-group-item list-group-item-action" type="button" " id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <b>Third Semester</b>
+                </button>
+                <div class="dropdown-menu" aria-labelledby="SEMESTERS">
+                    <a class="dropdown-item" href="#">Engineering Mathematics III</a>
+                    <a class="dropdown-item" href="#">Process Calculation</a>
+                    <a class="dropdown-item" href="#">Microbiology</a>
+                    <a class="dropdown-item" href="#">Foundations of biomolecules and metabiology</a>
+                    <a class="dropdown-item" href="#">Genetics</a>
+                    <a class="dropdown-item" href="#">Transport Processes I</a>
+                    <a class="dropdown-item" href="#">Microbiology Laboratory</a>
+                    <a class="dropdown-item" href="#">Biochemistry Labouratory</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button  class="list-group-item list-group-item-action" type="button"  id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <b>Fourth Semester</b>
+                </button>
+                <div class="dropdown-menu" aria-labelledby="SEMESTERS">
+                    <a class="dropdown-item" href="#">Engineering Thermodynamics</a>
+                    <a class="dropdown-item" href="#">industrial methods of analysis</a>
+                    <a class="dropdown-item" href="#">Biostatics and Biomodeling</a>
+                    <a class="dropdown-item" href="#">Cell and molecular biology </a>
+                    <a class="dropdown-item" href="#">Transport Processes II</a>
+                    <a class="dropdown-item" href="#">Cell and molecular biology labouratory</a>
+                    <a class="dropdown-item" href="#">Transport processes labouratory</a>
+                    <a class="dropdown-item" href="#">Constitution of india and professional ethics</a>
+
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="list-group-item list-group-item-action" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <b>Fifth Semester</b>
+                </button>
+                <div class="dropdown-menu" aria-labelledby="SEMESTERS">
+                    <a class="dropdown-item" href="#">Humanity subject</a>
+                    <a class="dropdown-item" href="#">Open elective</a>
+                    <a class="dropdown-item" href="#">Chemical reaction engineering</a>
+                    <a class="dropdown-item" href="#">Bioinformatics</a>
+                    <a class="dropdown-item" href="#">Industrial biotechnology</a>
+                    <a class="dropdown-item" href="#">Bioremediation of Xenobiotics</a>
+                    <a class="dropdown-item" href="#">Project Management</a>
+		    <a class="dropdown-item" href="#">Mini Project</a> 
+                   <a class="dropdown-item" href="#">Bioinformatics Labouratory</a>
+		<a class="dropdown-item" href="#">Soft Skills</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button  class="list-group-item list-group-item-action" type="button"  id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <b>Sixth Semester</b>
+                </button>
+                <div class="dropdown-menu" aria-labelledby="SEMESTERS">
+                    <a class="dropdown-item" href="#">Open elective</a>
+                    <a class="dropdown-item" href="#">Immunotechnology </a>
+                    <a class="dropdown-item" href="#">Enzyme Technology</a>
+                    <a class="dropdown-item" href="#">Research Methodology,biosafety and bioethics</a>
+                    <a class="dropdown-item" href="#">Professional Elective</a>
+                    <a class="dropdown-item" href="#">Mini project</a>
+                    <a class="dropdown-item" href="#">Chemical reaction engineering labouratory</a>
+                    <a class="dropdown-item" href="#">Bio analytics labouratory</a>
+                    <a class="dropdown-item" href="#">Industrial Training</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button  class="list-group-item list-group-item-action" type="button"  id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <b>Seventh Semester</b>
+                </button>
+                <div class="dropdown-menu" aria-labelledby="SEMESTERS">
+                    <a class="dropdown-item" href="#">Open elective</a>
+                    <a class="dropdown-item" href="#">Down stream process technology</a>
+                    <a class="dropdown-item" href="#">Genome informatics</a>
+                    <a class="dropdown-item" href="#">Plant and animal BT</a>
+                    <a class="dropdown-item" href="#">Professional Elective</a>
+                    <a class="dropdown-item" href="#">Professional Elective</a>
+                    <a class="dropdown-item" href="#">Major Project</a>
+                    <a class="dropdown-item" href="#">Down stream processing lab</a>
+                    <a class="dropdown-item" href="#">Genome informatics labouratory</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button  class="list-group-item list-group-item-action" type="button"  id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <b>Eight Semester</b>
+                </button>
+                <div class="dropdown-menu" aria-labelledby="SEMESTERS">
+                    <a class="dropdown-item" href="#">Clinical trails and data management</a>
+                    <a class="dropdown-item" href="#">Professional Elective</a>
+                    <a class="dropdown-item" href="#">Professional Elective</a>
+                    <a class="dropdown-item" href="#">Major project</a>
+                    <a class="dropdown-item" href="#">Biotechnology Seminor</a>
+                </div>
+            </div>
+                    </li>
+       
+    </ul>
+</div>
+
+
+
+            </div>
+            <div class="dropdown">
+                <button  class="list-group-item list-group-item-action" type="button" " id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <b>Chemical Engineering</b>
+                </button>
+                <div class="container">
+  <ul class="list-group">
+        <li class="list-group-item">
+            <div class="dropdown">
+                <button class="list-group-item list-group-item-action"  type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                   <b>First Semester</b>
+                </button>
+                <div class="dropdown-menu" aria-labelledby="Subjects">
+                    <a class="dropdown-item" href="#">Engineering Mathematics I</a>
+                    <a class="dropdown-item" href="#">Engineering Chemistry</a>
+                    <a class="dropdown-item" href="#">Foundations of computer science</a>
+                    <a class="dropdown-item" href="#">Foundations of Electronics Engineering</a>
+                    <a class="dropdown-item" href="#">Engineering Mechanics</a>
+                    <a class="dropdown-item" href="#">Communicative English</a>
+                    <a class="dropdown-item" href="#">Chemistry Lab</a>
+                    <a class="dropdown-item" href="#">Foundations of computer programming lab</a>
+                </div>
+            	</div>
+            <div class="dropdown">
+                <button class="list-group-item list-group-item-action" type="button"  id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <b></a>Second Semester</b>
+                </button>
+                <div class="dropdown-menu" aria-labelledby="SEMESTERS">
+                   <a class="dropdown-item" href="#">Engineering mathematicsII </a>
+                    <a class="dropdown-item" href="#">Engineering Physics</a>
+                    <a class="dropdown-item" href="#">Computer Aided Engineering drawing</a>
+                    <a class="dropdown-item" href="#">Foundations and Electrical engineering</a>
+                    <a class="dropdown-item" href="#">Foundations of mechanical Engineering</a>
+                    <a class="dropdown-item" href="#">Kannada</a>
+                    <a class="dropdown-item" href="#">Awareness to computer concepts</a>
+                    <a class="dropdown-item" href="#">Physics Lab</a>
+                    <a class="dropdown-item" href="#">Worshop Practise</a>
+                </div>
+            </div>
+            
+            <div class="dropdown">
+                <button  class="list-group-item list-group-item-action" type="button"  id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <b>Third Semester</b>
+                </button>
+                <div class="dropdown-menu" aria-labelledby="SEMESTERS">
+                    <a class="dropdown-item" href="#">Engineering mathematics III</a>
+                    <a class="dropdown-item" href="#">Organic Chemistry</a>
+                    <a class="dropdown-item" href="#">Momentum Transfer</a>
+                    <a class="dropdown-item" href="#">Mechanical Operations</a>
+                    <a class="dropdown-item" href="#">Material science, materials of constitution and nano materials</a>
+                    <a class="dropdown-item" href="#">Process Calculation</a>
+                    <a class="dropdown-item" href="#">Chemical Equipment drawing</a>
+                    <a class="dropdown-item" href="#">Organic chemistry lab</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="list-group-item list-group-item-action" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <b>Fourth Semester</b>
+                </button>
+                <div class="dropdown-menu" aria-labelledby="SEMESTERS">
+                    <a class="dropdown-item" href="#">Statistics and probability for engineering</a>
+                    <a class="dropdown-item" href="#">Constitution of india and professional ethics</a>
+                    <a class="dropdown-item" href="#">Mass transfer I</a>
+                    <a class="dropdown-item" href="#">Process heat transfer</a>
+                    <a class="dropdown-item" href="#">Engineering thermodynamics</a>
+                    <a class="dropdown-item" href="#">Instrumental methods of analysis</a>
+                    <a class="dropdown-item" href="#">Mechanical operations lab</a>
+		    <a class="dropdown-item" href="#">Momentum Transfer lab</a> 
+                   <a class="dropdown-item" href="#">Technical chemistry lab</a>
+                </div>
+            </div>
+	<div class="dropdown">
+                <button  class="list-group-item list-group-item-action" type="button" " id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <b>Fifth Semester</b>
+                </button>
+                <div class="dropdown-menu" aria-labelledby="SEMESTERS">
+                    <a class="dropdown-item" href="#">Humanity Science</a>
+                    <a class="dropdown-item" href="#">Mass transfer</a>
+                    <a class="dropdown-item" href="#">Chemical Technology</a>
+                    <a class="dropdown-item" href="#">Project managemet</a>
+                    <a class="dropdown-item" href="#">Chemical reaction engineering</a>
+                    <a class="dropdown-item" href="#">Elective A</a>
+                    <a class="dropdown-item" href="#">Open Elective</a>
+                    <a class="dropdown-item" href="#">Heat tranfer lab</a>
+                    <a class="dropdown-item" href="#">Mini project</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button  class="list-group-item list-group-item-action" type="button"  id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <b>Sixth Semester</b>
+                </button>
+                <div class="dropdown-menu" aria-labelledby="SEMESTERS">
+                    <a class="dropdown-item" href="#">Humanity Science</a>
+                    <a class="dropdown-item" href="#">Aptitude related analytics skills</a>
+                    <a class="dropdown-item" href="#">Chemical equipment design I</a>
+                    <a class="dropdown-item" href="#">Heterogenous reaction systems</a>
+                    <a class="dropdown-item" href="#">Process dynamics and control</a>
+                    <a class="dropdown-item" href="#">Professional elective II</a>
+                    <a class="dropdown-item" href="#">Open elective</a>
+                    <a class="dropdown-item" href="#">Mass transfer lab</a>
+                    <a class="dropdown-item" href="#">Reaction engineering lab</a> 
+                   <a class="dropdown-item" href="#">Mini project</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button  class="list-group-item list-group-item-action" type="button"  id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <b>Seventh Semester</b>
+                </button>
+                <div class="dropdown-menu" aria-labelledby="SEMESTERS">
+                    <a class="dropdown-item" href="#">Industrial safety engineering</a>
+                    <a class="dropdown-item" href="#">Transport Phenomena</a>
+                    <a class="dropdown-item" href="#">Computer application and modeling in chemical engineering</a>
+                    <a class="dropdown-item" href="#">chemical equipment design II</a>
+                    <a class="dropdown-item" href="#">Proffesional Practise</a>
+                    <a class="dropdown-item" href="#">Elective C</a>
+                    <a class="dropdown-item" href="#">process control lab</a>
+                    <a class="dropdown-item" href="#">Computer application stimulation lab</a>
+                    <a class="dropdown-item" href="#">Industrial training</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button  class="list-group-item list-group-item-action" type="button"  id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <b>Eight Semester</b>
+                </button>
+                <div class="dropdown-menu" aria-labelledby="SEMESTERS">
+                    <a class="dropdown-item" href="#">Biochemical engg</a>
+                    <a class="dropdown-item" href="#">Optimization of chemical process</a>
+                    <a class="dropdown-item" href="#">elective D</a>
+                    <a class="dropdown-item" href="#">Major project</a>
+                    <a class="dropdown-item" href="#">Technical seminor</a>
+                </div>
+            </div>
+                    </li>
+       
+    </ul>
+</div>
+
+
+
+            </div>
+            <div class="dropdown">
+                <button  class="list-group-item list-group-item-action" type="button"  id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <b>Civil Engineering</b>
+                </button>
+            <div class="container">
+  <ul class="list-group">
+        <li class="list-group-item">
+            <div class="dropdown">
+                <button class="list-group-item list-group-item-action"  type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                   <b>First Semester</b>
+                </button>
+                <div class="dropdown-menu" aria-labelledby="Subjects">
+                   <a class="dropdown-item" href="#">Engineering Mathematics I</a>
+                    <a class="dropdown-item" href="#">Engineering Chemistry</a>
+                    <a class="dropdown-item" href="#">Foundations of computer science</a>
+                    <a class="dropdown-item" href="#">Foundations of Electronics Engineering</a>
+                    <a class="dropdown-item" href="#">Engineering Mechanics</a>
+                    <a class="dropdown-item" href="#">Communicative English</a>
+                    <a class="dropdown-item" href="#">Chemistry Lab</a>
+                    <a class="dropdown-item" href="#">Foundations of computer programming lab</a>
+                </div>
+            	</div>
+            <div class="dropdown">
+                <button class="list-group-item list-group-item-action" type="button"  id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <b></a>Second Semester</b>
+                </button>
+                <div class="dropdown-menu" aria-labelledby="SEMESTERS">
+                     <a class="dropdown-item" href="#">Engineering mathematicsII </a>
+                    <a class="dropdown-item" href="#">Engineering Physics</a>
+                    <a class="dropdown-item" href="#">Computer Aided Engineering drawing</a>
+                    <a class="dropdown-item" href="#">Foundations and Electrical engineering</a>
+                    <a class="dropdown-item" href="#">Foundations of mechanical Engineering</a>
+                    <a class="dropdown-item" href="#">Kannada</a>
+                    <a class="dropdown-item" href="#">Awareness to computer concepts</a>
+                    <a class="dropdown-item" href="#">Physics Lab</a>
+                    <a class="dropdown-item" href="#">Worshop Practise</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button  class="list-group-item list-group-item-action" type="button" " id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <b>Third Semester</b>
+                </button>
+                <div class="dropdown-menu" aria-labelledby="SEMESTERS">
+                    <a class="dropdown-item" href="#">Architectural design III</a>
+                    <a class="dropdown-item" href="#">Building materials and construction III</a>
+                    <a class="dropdown-item" href="#">Computer Applications I</a>
+                    <a class="dropdown-item" href="#">Structural systems and behaviour III</a>
+                    <a class="dropdown-item" href="#">Climate responsive architecture</a>
+                    <a class="dropdown-item" href="#">History of architecture III</a>
+                    <a class="dropdown-item" href="#">Building services I</a>
+                    <a class="dropdown-item" href="#">Surveying and levelling</a>
+                    <a class="dropdown-item" href="#">Study tour I</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button  class="list-group-item list-group-item-action" type="button"  id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <b>Fourth Semester</b>
+                </button>
+                <div class="dropdown-menu" aria-labelledby="SEMESTERS">
+                    <a class="dropdown-item" href="#">Architectural design IV</a>
+                    <a class="dropdown-item" href="#">Building materials and construction IV</a>
+                    <a class="dropdown-item" href="#">Computer Applications II</a>
+                    <a class="dropdown-item" href="#">Structural systems and behaviour IV</a>
+                    <a class="dropdown-item" href="#">Human settlements and vernacular architecture</a>
+                    <a class="dropdown-item" href="#">History of architecture IV</a>
+                    <a class="dropdown-item" href="#">Building Services II</a>
+                    <a class="dropdown-item" href="#">Socially and economics</a>
+                    <a class="dropdown-item" href="#">Personality development skills</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="list-group-item list-group-item-action" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <b>Fifth Semester</b>
+                </button>
+                <div class="dropdown-menu" aria-labelledby="SEMESTERS">
+                    <a class="dropdown-item" href="#">Architectural design V</a>
+                    <a class="dropdown-item" href="#">Building materials and construction V</a>
+                    <a class="dropdown-item" href="#">Computer Applications III</a>
+                    <a class="dropdown-item" href="#">Landscape architecture</a>
+                    <a class="dropdown-item" href="#">History of architecture V</a>
+                    <a class="dropdown-item" href="#">Building estimation and specification</a>
+                    <a class="dropdown-item" href="#">Building Services III</a>
+		    <a class="dropdown-item" href="#">Structural systems and behaviour V</a> 
+                   <a class="dropdown-item" href="#">Study Tour II</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button  class="list-group-item list-group-item-action" type="button"  id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <b>Sixth Semester</b>
+                </button>
+                <div class="dropdown-menu" aria-labelledby="SEMESTERS">
+                    <a class="dropdown-item" href="#">Architectural design VI</a>
+                    <a class="dropdown-item" href="#">Working Drawing </a>
+                    <a class="dropdown-item" href="#">Interior Design</a>
+                    <a class="dropdown-item" href="#">History of architecture VI</a>
+                    <a class="dropdown-item" href="#">Sociology and economics</a>
+                    <a class="dropdown-item" href="#">Building services IV</a>
+                    <a class="dropdown-item" href="#">Elective I</a>
+                    <a class="dropdown-item" href="#">Constitution indian and professional ethics</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button  class="list-group-item list-group-item-action" type="button"  id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <b>Seventh Semester</b>
+                </button>
+                <div class="dropdown-menu" aria-labelledby="SEMESTERS">
+                    <a class="dropdown-item" href="#">Architectural design VII</a>
+                    <a class="dropdown-item" href="#">Eathquake resistant structures</a>
+                    <a class="dropdown-item" href="#">Research skills and project introduction</a>
+                    <a class="dropdown-item" href="#">Energy conscious architecture</a>
+                    <a class="dropdown-item" href="#">Proffesional Practise</a>
+                    <a class="dropdown-item" href="#">Urban and regional planning</a>
+                    <a class="dropdown-item" href="#">Elective II</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button  class="list-group-item list-group-item-action" type="button"  id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <b>Eight Semester</b>
+                </button>
+                <div class="dropdown-menu" aria-labelledby="SEMESTERS">
+                    <a class="dropdown-item" href="#">Architectural Thesis</a>
+                    <a class="dropdown-item" href="#"Elective III</a>
+                </div>
+            </div>
+                    </li>
+       
+    </ul>
+</div>
+
+
+
+            </div>
+            <div class="dropdown">
+                <button class="list-group-item list-group-item-action" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <b>Computer Science Engineering</b>
+                </button>
+               <div class="container">
+  <ul class="list-group">
+        <li class="list-group-item">
+            <div class="dropdown">
+                <button class="list-group-item list-group-item-action"  type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                   <b>First Semester</b>
+                </button>
+               <div class="dropdown-menu" aria-labelledby="SEMESTERS">
+                    <a class="dropdown-item" href="#">Engineering Mathematics I</a>
+                    <a class="dropdown-item" href="#">Engineering Chemistry</a>
+                    <a class="dropdown-item" href="#">Foundations of computer science</a>
+                    <a class="dropdown-item" href="#">Foundations of Electronics Engineering</a>
+                    <a class="dropdown-item" href="#">Engineering Mechanics</a>
+                    <a class="dropdown-item" href="#">Communicative English</a>
+                    <a class="dropdown-item" href="#">Chemistry Lab</a>
+                    <a class="dropdown-item" href="#">Foundations of computer programming lab</a>
+                </div>
+            	</div>
+            <div class="dropdown">
+                <button class="list-group-item list-group-item-action" type="button"  id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <b></a>Second Semester</b>
+                </button>
+                <div class="dropdown-menu" aria-labelledby="SEMESTERS">
+                    <a class="dropdown-item" href="#">Engineering mathematicsII </a>
+                    <a class="dropdown-item" href="#">Engineering Physics</a>
+                    <a class="dropdown-item" href="#">Computer Aided Engineering drawing</a>
+                    <a class="dropdown-item" href="#">Foundations and Electrical engineering</a>
+                    <a class="dropdown-item" href="#">Foundations of mechanical Engineering</a>
+                    <a class="dropdown-item" href="#">Kannada</a>
+                    <a class="dropdown-item" href="#">Awareness to computer concepts</a>
+                    <a class="dropdown-item" href="#">Physics Lab</a>
+                    <a class="dropdown-item" href="#">Worshop Practise</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button  class="list-group-item list-group-item-action" type="button" " id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <b>Third Semester</b>
+                </button>
+                <div class="dropdown-menu" aria-labelledby="SEMESTERS">
+                    <a class="dropdown-item" href="http://www.math.louisville.edu/~pksaho01/teaching/Math662TB-09S.pdf">Statistics and probability theory</a>
+                    <a class="dropdown-item" href="https://fac.ksu.edu.sa/sites/default/files/ObjectOrientedProgramminginC4thEdition.pdf">Object oreanted programming with c++</a>
+                    <a class="dropdown-item" href="https://www2.cs.duke.edu/courses/fall08/cps230/Book.pdf">Analysis and design of algorithm</a>
+                    <a class="dropdown-item" href="https://ti.tuwien.ac.at/ecs/teaching/courses/mclu/theory-material/Microcontroller.pdf">Microcontroller</a>
+                    <a class="dropdown-item" href="https://www.iitg.ac.in/dgoswami/Flat-Notes.pdf">Finite automata and formal language</a>
+                    <a class="dropdown-item" href="https://doc.lagout.org/science/0_Computer%20Science/3_Theory/Graph%20Theory/Combinatorics%20and%20Graph%20Theory.pdf?fbclid=IwAR0KnW1gzfDyEoyT_IjLTrJDV6GcgcAtv9r0z5OWGCJepcTMQI9BqfCXg5I">Graph theory and combinatories</a>
+                    <a class="dropdown-item" href="ObjectOrientedProgramminginC4thEdition.pdf">Object oreinted programing lab</a>
+                    <a class="dropdown-item" href="#">Microcontroller lab</a>
+                    <a class="dropdown-item" href="#">Constitution of india and ethical values</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button  class="list-group-item list-group-item-action" type="button"  id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <b>Fourth Semester</b>
+                </button>
+                <div class="dropdown-menu" aria-labelledby="SEMESTERS">
+                    <a class="dropdown-item" href="https://courses.csail.mit.edu/6.042/spring17/mcs.pdf">Mathematical concepts for information technology</a>
+                    <a class="dropdown-item" href="http://file.allitebooks.com/20160718/Computer%20Organization%20and%20Design,%20Fifth%20Edition.pdf">Computer Organisation</a>
+                    <a class="dropdown-item" href="http://www.darshan.ac.in/Upload/DIET/Documents/CE/2130702_DS_2015_24112015_025019AM.pdf">Data Structures</a>
+                    <a class="dropdown-item" href="http://american.cs.ucdavis.edu/academic/ecs154a.sum14/postscript/cosc205.pdf">Logic Design</a>
+                    <a class="dropdown-item" href="https://mathcs.clarku.edu/~djoyce/ma114/Rosen6E.pdf">Descrete mathematical Structures</a>
+                    <a class="dropdown-item" href="#">Data structures lab</a>
+                    <a class="dropdown-item" href="#">Logic design lab</a>
+                    <a class="dropdown-item" href="#">Arduino lab</a>
+
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="list-group-item list-group-item-action" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <b>Fifth Semester</b>
+                </button>
+                <div class="dropdown-menu" aria-labelledby="SEMESTERS">
+                    <a class="dropdown-item" href="http://www.ddegjust.ac.in/studymaterial/mca-3/ms-11.pdf">Database management system</a>
+                    <a class="dropdown-item" href="http://library.aceondo.net/ebooks/Computer_Science/Data_Communication_and_Networking_by_Behrouz.A.Forouzan_4th.edition.pdf">Data communications</a>
+                    <a class="dropdown-item" href="http://www.uobabylon.edu.iq/download/M.S%202013-2014/Operating_System_Concepts,_8th_Edition%5BA4%5D.pdf">Operating system</a>
+                    <a class="dropdown-item" href="https://www.oreilly.com/openbook/utp/UnixTextProcessing.pdf">Unix and shell programming</a>
+                    <a class="dropdown-item" href="#">Analysis and design of algorithm lab</a>
+                    <a class="dropdown-item" href="#">Java programming lab</a>
+                    <a class="dropdown-item" href="#">Mini project</a>
+		    <a class="dropdown-item" href="#">Soft skills</a> 
+                   <a class="dropdown-item" href="#">Environmental science</a>
+		    <a class="dropdown-item" href="#">Open elective</a> 
+                </div>
+            </div>
+            <div class="dropdown">
+                <button  class="list-group-item list-group-item-action" type="button"  id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <b>Sixth Semester</b>
+                </button>
+                <div class="dropdown-menu" aria-labelledby="SEMESTERS">
+                    <a class="dropdown-item" href="http://intronetworks.cs.luc.edu/current/ComputerNetworks.pdf">Computer networks</a>
+                    <a class="dropdown-item" href="http://iips.icci.edu.iq/images/exam/Software-Engineering-9th-Edition-by-Ian-Sommerville.pdf">Software engineering</a>
+                    <a class="dropdown-item" href="http://ebooks.lpude.in/computer_application/mca/term_4/DCAP507_SYSTEM_SOFTWARE.pdf">System software and system design</a>
+                    <a class="dropdown-item" href="http://www.hiteshpatel.co.in/ebook/cg/Computer_Graphics_C_Version.pdf">Computer graphics and visualisation</a>
+                    <a class="dropdown-item" href="#">Database management system lab</a>
+                    <a class="dropdown-item" href="#">computer graphics and visualisation lab</a>
+                    <a class="dropdown-item" href="#">Mini project</a> 
+                   <a class="dropdown-item" href="#">Aptitude related analytical skills</a>
+                    <a class="dropdown-item" href="#">Professional elective 1</a>
+                    <a class="dropdown-item" href="#">Open elective 2</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button  class="list-group-item list-group-item-action" type="button"  id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <b>Seventh Semester</b>
+                </button>
+                <div class="dropdown-menu" aria-labelledby="SEMESTERS">
+                    <a class="dropdown-item" href="https://bucket.daz.cat/9780133354690.pdf">Cryptography and network security</a>
+                    <a class="dropdown-item" href="https://pdfs.semanticscholar.org/6575/2cea972b6bf4172e09bea71b75ffa1009329.pdf">Object oreanted modeling and design</a>
+                    <a class="dropdown-item" href="#">Networking programming lab</a>
+                   <a class="dropdown-item" href="#">Major project</a>
+                    <a class="dropdown-item" href="#">Cryptography and network security lab</a> 
+                    <a class="dropdown-item" href="#">Industrial training</a>
+                  <a class="dropdown-item" href="#">Proffesional elective 2</a>
+                   <a class="dropdown-item" href="#">Proffesional elective 3</a>
+                    <a class="dropdown-item" href="#">Humanity and social science</a>
+                   <a class="dropdown-item" href="#">Open elective</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button  class="list-group-item list-group-item-action" type="button"  id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <b>Eight Semester</b>
+                </button>
+                <div class="dropdown-menu" aria-labelledby="SEMESTERS">
+                    <a class="dropdown-item" href="#">Major project</a>
+                    <a class="dropdown-item" href="#">Technical Seminor</a>
+                    <a class="dropdown-item" href="#">Professional Elective 5</a>                    
+		    <a class="dropdown-item" href="#">Professional Elective 6</a>
+
+                </div>
+            </div>
+                    </li>
+       
+    </ul>
+</div>
+
+
+
+            </div>
+            <div class="dropdown">
+                <button  class="list-group-item list-group-item-action" type="button"  id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <b>Electronics and Communication</b>
+                </button>
+              <div class="container">
+  <ul class="list-group">
+        <li class="list-group-item">
+            <div class="dropdown">
+                <button class="list-group-item list-group-item-action"  type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                   <b>First Semester</b>
+                </button>
+                <div class="dropdown-menu" aria-labelledby="Subjects">
+                    <a class="dropdown-item" href="#">Engineering Mathematics I</a>
+                    <a class="dropdown-item" href="#">Engineering Chemistry</a>
+                    <a class="dropdown-item" href="#">Foundations of computer science</a>
+                    <a class="dropdown-item" href="#">Foundations of Electronics Engineering</a>
+                    <a class="dropdown-item" href="#">Engineering Mechanics</a>
+                    <a class="dropdown-item" href="#">Communicative English</a>
+                    <a class="dropdown-item" href="#">Chemistry Lab</a>
+                    <a class="dropdown-item" href="#">Foundations of computer programming lab</a>
+                </div>
+            	</div>
+            <div class="dropdown">
+                <button class="list-group-item list-group-item-action" type="button"  id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <b></a>Second Semester</b>
+                </button>
+                <div class="dropdown-menu" aria-labelledby="SEMESTERS">
+                    <a class="dropdown-item" href="#">Engineering mathematicsII </a>
+                    <a class="dropdown-item" href="#">Engineering Physics</a>
+                    <a class="dropdown-item" href="#">Computer Aided Engineering drawing</a>
+                    <a class="dropdown-item" href="#">Foundations and Electrical engineering</a>
+                    <a class="dropdown-item" href="#">Foundations of mechanical Engineering</a>
+                    <a class="dropdown-item" href="#">Kannada</a>
+                    <a class="dropdown-item" href="#">Awareness to computer concepts</a>
+                    <a class="dropdown-item" href="#">Physics Lab</a>
+                    <a class="dropdown-item" href="#">Worshop Practise</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button  class="list-group-item list-group-item-action" type="button" " id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <b>Third Semester</b>
+                </button>
+                <div class="dropdown-menu" aria-labelledby="SEMESTERS">
+                    <a class="dropdown-item" href="#">Engineering mathematics III</a>
+                    <a class="dropdown-item" href="#">Electronics measurements</a>
+                    <a class="dropdown-item" href="#">Analog electronic circuits</a>
+                    <a class="dropdown-item" href="#">Digital electronic circuits</a>
+                    <a class="dropdown-item" href="#">Network analysis</a>
+                    <a class="dropdown-item" href="#">Signals and systems</a>
+                    <a class="dropdown-item" href="#">Analog electronic circuits lab</a>
+                    <a class="dropdown-item" href="#">Digitsl electronic circuit lab</a>
+ 
+                </div>
+            </div>
+            <div class="dropdown">
+                <button  class="list-group-item list-group-item-action" type="button"  id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <b>Fourth Semester</b>
+                </button>
+                <div class="dropdown-menu" aria-labelledby="SEMESTERS">
+                    <a class="dropdown-item" href="#">Architectural design IV</a>
+                    <a class="dropdown-item" href="#">Building materials and construction IV</a>
+                    <a class="dropdown-item" href="#">Computer Applications II</a>
+                    <a class="dropdown-item" href="#">Structural systems and behaviour IV</a>
+                    <a class="dropdown-item" href="#">Human settlements and vernacular architecture</a>
+                    <a class="dropdown-item" href="#">History of architecture IV</a>
+                    <a class="dropdown-item" href="#">Building Services II</a>
+                    <a class="dropdown-item" href="#">Socially and economics</a>
+                    <a class="dropdown-item" href="#">Personality development skills</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="list-group-item list-group-item-action" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <b>Fifth Semester</b>
+                </button>
+                <div class="dropdown-menu" aria-labelledby="SEMESTERS">
+                    <a class="dropdown-item" href="#">Architectural design V</a>
+                    <a class="dropdown-item" href="#">Building materials and construction V</a>
+                    <a class="dropdown-item" href="#">Computer Applications III</a>
+                    <a class="dropdown-item" href="#">Landscape architecture</a>
+                    <a class="dropdown-item" href="#">History of architecture V</a>
+                    <a class="dropdown-item" href="#">Building estimation and specification</a>
+                    <a class="dropdown-item" href="#">Building Services III</a>
+		    <a class="dropdown-item" href="#">Structural systems and behaviour V</a> 
+                   <a class="dropdown-item" href="#">Study Tour II</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button  class="list-group-item list-group-item-action" type="button"  id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <b>Sixth Semester</b>
+                </button>
+                <div class="dropdown-menu" aria-labelledby="SEMESTERS">
+                    <a class="dropdown-item" href="#">Architectural design VI</a>
+                    <a class="dropdown-item" href="#">Working Drawing </a>
+                    <a class="dropdown-item" href="#">Interior Design</a>
+                    <a class="dropdown-item" href="#">History of architecture VI</a>
+                    <a class="dropdown-item" href="#">Sociology and economics</a>
+                    <a class="dropdown-item" href="#">Building services IV</a>
+                    <a class="dropdown-item" href="#">Elective I</a>
+                    <a class="dropdown-item" href="#">Constitution indian and professional ethics</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button  class="list-group-item list-group-item-action" type="button"  id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <b>Seventh Semester</b>
+                </button>
+                <div class="dropdown-menu" aria-labelledby="SEMESTERS">
+                    <a class="dropdown-item" href="#">Architectural design VII</a>
+                    <a class="dropdown-item" href="#">Eathquake resistant structures</a>
+                    <a class="dropdown-item" href="#">Research skills and project introduction</a>
+                    <a class="dropdown-item" href="#">Energy conscious architecture</a>
+                    <a class="dropdown-item" href="#">Proffesional Practise</a>
+                    <a class="dropdown-item" href="#">Urban and regional planning</a>
+                    <a class="dropdown-item" href="#">Elective II</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button  class="list-group-item list-group-item-action" type="button"  id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <b>Eight Semester</b>
+                </button>
+                <div class="dropdown-menu" aria-labelledby="SEMESTERS">
+                    <a class="dropdown-item" href="#">Architectural Thesis</a>
+                    <a class="dropdown-item" href="#"Elective III</a>
+                </div>
+            </div>
+                    </li>
+       
+    </ul>
+</div>
+
+
+
+            </div>
+            <div class="dropdown">
+                <button  class="list-group-item list-group-item-action" type="button"  id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <b>Electrical and Electronics</b>
+                </button>
+                <div class="container">
+  <ul class="list-group">
+        <li class="list-group-item">
+            <div class="dropdown">
+                <button class="list-group-item list-group-item-action"  type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                   <b>First Semester</b>
+                </button>
+                <div class="dropdown-menu" aria-labelledby="Subjects">
+                    <a class="dropdown-item" href="#">Engineering Mathematics I</a>
+                    <a class="dropdown-item" href="#">Engineering Chemistry</a>
+                    <a class="dropdown-item" href="#">Foundations of computer science</a>
+                    <a class="dropdown-item" href="#">Foundations of Electronics Engineering</a>
+                    <a class="dropdown-item" href="#">Engineering Mechanics</a>
+                    <a class="dropdown-item" href="#">Communicative English</a>
+                    <a class="dropdown-item" href="#">Chemistry Lab</a>
+                    <a class="dropdown-item" href="#">Foundations of computer programming lab</a>
+                </div>
+            	</div>
+            <div class="dropdown">
+                <button class="list-group-item list-group-item-action" type="button"  id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <b></a>Second Semester</b>
+                </button>
+                <div class="dropdown-menu" aria-labelledby="SEMESTERS">
+                    <a class="dropdown-item" href="#">Engineering mathematicsII </a>
+                    <a class="dropdown-item" href="#">Engineering Physics</a>
+                    <a class="dropdown-item" href="#">Computer Aided Engineering drawing</a>
+                    <a class="dropdown-item" href="#">Foundations and Electrical engineering</a>
+                    <a class="dropdown-item" href="#">Foundations of mechanical Engineering</a>
+                    <a class="dropdown-item" href="#">Kannada</a>
+                    <a class="dropdown-item" href="#">Awareness to computer concepts</a>
+                    <a class="dropdown-item" href="#">Physics Lab</a>
+                    <a class="dropdown-item" href="#">Worshop Practise</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button  class="list-group-item list-group-item-action" type="button" " id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <b>Third Semester</b>
+                </button>
+                <div class="dropdown-menu" aria-labelledby="SEMESTERS">
+                    <a class="dropdown-item" href="#">Architectural design III</a>
+                    <a class="dropdown-item" href="#">Building materials and construction III</a>
+                    <a class="dropdown-item" href="#">Computer Applications I</a>
+                    <a class="dropdown-item" href="#">Structural systems and behaviour III</a>
+                    <a class="dropdown-item" href="#">Climate responsive architecture</a>
+                    <a class="dropdown-item" href="#">History of architecture III</a>
+                    <a class="dropdown-item" href="#">Building services I</a>
+                    <a class="dropdown-item" href="#">Surveying and levelling</a>
+                    <a class="dropdown-item" href="#">Study tour I</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button  class="list-group-item list-group-item-action" type="button"  id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <b>Fourth Semester</b>
+                </button>
+                <div class="dropdown-menu" aria-labelledby="SEMESTERS">
+                    <a class="dropdown-item" href="#">Architectural design IV</a>
+                    <a class="dropdown-item" href="#">Building materials and construction IV</a>
+                    <a class="dropdown-item" href="#">Computer Applications II</a>
+                    <a class="dropdown-item" href="#">Structural systems and behaviour IV</a>
+                    <a class="dropdown-item" href="#">Human settlements and vernacular architecture</a>
+                    <a class="dropdown-item" href="#">History of architecture IV</a>
+                    <a class="dropdown-item" href="#">Building Services II</a>
+                    <a class="dropdown-item" href="#">Socially and economics</a>
+                    <a class="dropdown-item" href="#">Personality development skills</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="list-group-item list-group-item-action" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <b>Fifth Semester</b>
+                </button>
+                <div class="dropdown-menu" aria-labelledby="SEMESTERS">
+                    <a class="dropdown-item" href="#">Architectural design V</a>
+                    <a class="dropdown-item" href="#">Building materials and construction V</a>
+                    <a class="dropdown-item" href="#">Computer Applications III</a>
+                    <a class="dropdown-item" href="#">Landscape architecture</a>
+                    <a class="dropdown-item" href="#">History of architecture V</a>
+                    <a class="dropdown-item" href="#">Building estimation and specification</a>
+                    <a class="dropdown-item" href="#">Building Services III</a>
+		    <a class="dropdown-item" href="#">Structural systems and behaviour V</a> 
+                   <a class="dropdown-item" href="#">Study Tour II</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button  class="list-group-item list-group-item-action" type="button"  id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <b>Sixth Semester</b>
+                </button>
+                <div class="dropdown-menu" aria-labelledby="SEMESTERS">
+                    <a class="dropdown-item" href="#">Architectural design VI</a>
+                    <a class="dropdown-item" href="#">Working Drawing </a>
+                    <a class="dropdown-item" href="#">Interior Design</a>
+                    <a class="dropdown-item" href="#">History of architecture VI</a>
+                    <a class="dropdown-item" href="#">Sociology and economics</a>
+                    <a class="dropdown-item" href="#">Building services IV</a>
+                    <a class="dropdown-item" href="#">Elective I</a>
+                    <a class="dropdown-item" href="#">Constitution indian and professional ethics</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button  class="list-group-item list-group-item-action" type="button"  id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <b>Seventh Semester</b>
+                </button>
+                <div class="dropdown-menu" aria-labelledby="SEMESTERS">
+                    <a class="dropdown-item" href="#">Architectural design VII</a>
+                    <a class="dropdown-item" href="#">Eathquake resistant structures</a>
+                    <a class="dropdown-item" href="#">Research skills and project introduction</a>
+                    <a class="dropdown-item" href="#">Energy conscious architecture</a>
+                    <a class="dropdown-item" href="#">Proffesional Practise</a>
+                    <a class="dropdown-item" href="#">Urban and regional planning</a>
+                    <a class="dropdown-item" href="#">Elective II</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button  class="list-group-item list-group-item-action" type="button"  id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <b>Eight Semester</b>
+                </button>
+                <div class="dropdown-menu" aria-labelledby="SEMESTERS">
+                    <a class="dropdown-item" href="#">Architectural Thesis</a>
+                    <a class="dropdown-item" href="#"Elective III</a>
+                </div>
+            </div>
+                    </li>
+       
+    </ul>
+</div>
+
+
+
+            </div>
+            <div class="dropdown">
+                <button  class="list-group-item list-group-item-action" type="button"  id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <b>Instrumentation Engineering</b>
+                </button>
+               <div class="container">
+  <ul class="list-group">
+        <li class="list-group-item">
+            <div class="dropdown">
+                <button class="list-group-item list-group-item-action"  type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                   <b>First Semester</b>
+                </button>
+                <div class="dropdown-menu" aria-labelledby="Subjects">
+                    <a class="dropdown-item" href="#">Engineering Mathematics I</a>
+                    <a class="dropdown-item" href="#">Engineering Chemistry</a>
+                    <a class="dropdown-item" href="#">Foundations of computer science</a>
+                    <a class="dropdown-item" href="#">Foundations of Electronics Engineering</a>
+                    <a class="dropdown-item" href="#">Engineering Mechanics</a>
+                    <a class="dropdown-item" href="#">Communicative English</a>
+                    <a class="dropdown-item" href="#">Chemistry Lab</a>
+                    <a class="dropdown-item" href="#">Foundations of computer programming lab</a>
+                </div>
+            	</div>
+            <div class="dropdown">
+                <button class="list-group-item list-group-item-action" type="button"  id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <b></a>Second Semester</b>
+                </button>
+                <div class="dropdown-menu" aria-labelledby="SEMESTERS">
+                    <a class="dropdown-item" href="#">Engineering mathematicsII </a>
+                    <a class="dropdown-item" href="#">Engineering Physics</a>
+                    <a class="dropdown-item" href="#">Computer Aided Engineering drawing</a>
+                    <a class="dropdown-item" href="#">Foundations and Electrical engineering</a>
+                    <a class="dropdown-item" href="#">Foundations of mechanical Engineering</a>
+                    <a class="dropdown-item" href="#">Kannada</a>
+                    <a class="dropdown-item" href="#">Awareness to computer concepts</a>
+                    <a class="dropdown-item" href="#">Physics Lab</a>
+                    <a class="dropdown-item" href="#">Worshop Practise</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button  class="list-group-item list-group-item-action" type="button" " id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <b>Third Semester</b>
+                </button>
+                <div class="dropdown-menu" aria-labelledby="SEMESTERS">
+                    <a class="dropdown-item" href="#">Architectural design III</a>
+                    <a class="dropdown-item" href="#">Building materials and construction III</a>
+                    <a class="dropdown-item" href="#">Computer Applications I</a>
+                    <a class="dropdown-item" href="#">Structural systems and behaviour III</a>
+                    <a class="dropdown-item" href="#">Climate responsive architecture</a>
+                    <a class="dropdown-item" href="#">History of architecture III</a>
+                    <a class="dropdown-item" href="#">Building services I</a>
+                    <a class="dropdown-item" href="#">Surveying and levelling</a>
+                    <a class="dropdown-item" href="#">Study tour I</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button  class="list-group-item list-group-item-action" type="button"  id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <b>Fourth Semester</b>
+                </button>
+                <div class="dropdown-menu" aria-labelledby="SEMESTERS">
+                    <a class="dropdown-item" href="#">Architectural design IV</a>
+                    <a class="dropdown-item" href="#">Building materials and construction IV</a>
+                    <a class="dropdown-item" href="#">Computer Applications II</a>
+                    <a class="dropdown-item" href="#">Structural systems and behaviour IV</a>
+                    <a class="dropdown-item" href="#">Human settlements and vernacular architecture</a>
+                    <a class="dropdown-item" href="#">History of architecture IV</a>
+                    <a class="dropdown-item" href="#">Building Services II</a>
+                    <a class="dropdown-item" href="#">Socially and economics</a>
+                    <a class="dropdown-item" href="#">Personality development skills</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="list-group-item list-group-item-action" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <b>Fifth Semester</b>
+                </button>
+                <div class="dropdown-menu" aria-labelledby="SEMESTERS">
+                    <a class="dropdown-item" href="#">Architectural design V</a>
+                    <a class="dropdown-item" href="#">Building materials and construction V</a>
+                    <a class="dropdown-item" href="#">Computer Applications III</a>
+                    <a class="dropdown-item" href="#">Landscape architecture</a>
+                    <a class="dropdown-item" href="#">History of architecture V</a>
+                    <a class="dropdown-item" href="#">Building estimation and specification</a>
+                    <a class="dropdown-item" href="#">Building Services III</a>
+		    <a class="dropdown-item" href="#">Structural systems and behaviour V</a> 
+                   <a class="dropdown-item" href="#">Study Tour II</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button  class="list-group-item list-group-item-action" type="button"  id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <b>Sixth Semester</b>
+                </button>
+                <div class="dropdown-menu" aria-labelledby="SEMESTERS">
+                    <a class="dropdown-item" href="#">Architectural design VI</a>
+                    <a class="dropdown-item" href="#">Working Drawing </a>
+                    <a class="dropdown-item" href="#">Interior Design</a>
+                    <a class="dropdown-item" href="#">History of architecture VI</a>
+                    <a class="dropdown-item" href="#">Sociology and economics</a>
+                    <a class="dropdown-item" href="#">Building services IV</a>
+                    <a class="dropdown-item" href="#">Elective I</a>
+                    <a class="dropdown-item" href="#">Constitution indian and professional ethics</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button  class="list-group-item list-group-item-action" type="button"  id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <b>Seventh Semester</b>
+                </button>
+                <div class="dropdown-menu" aria-labelledby="SEMESTERS">
+                    <a class="dropdown-item" href="#">Architectural design VII</a>
+                    <a class="dropdown-item" href="#">Eathquake resistant structures</a>
+                    <a class="dropdown-item" href="#">Research skills and project introduction</a>
+                    <a class="dropdown-item" href="#">Energy conscious architecture</a>
+                    <a class="dropdown-item" href="#">Proffesional Practise</a>
+                    <a class="dropdown-item" href="#">Urban and regional planning</a>
+                    <a class="dropdown-item" href="#">Elective II</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button  class="list-group-item list-group-item-action" type="button"  id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <b>Eight Semester</b>
+                </button>
+                <div class="dropdown-menu" aria-labelledby="SEMESTERS">
+                    <a class="dropdown-item" href="#">Architectural Thesis</a>
+                    <a class="dropdown-item" href="#"Elective III</a>
+                </div>
+            </div>
+                    </li>
+       
+    </ul>
+</div>
+
+
+
+            </div>
+            <div class="dropdown">
+                <button  class="list-group-item list-group-item-action" type="button"  id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <b>Information Science Engineering</b>
+                </button>
+                <div class="container">
+  <ul class="list-group">
+        <li class="list-group-item">
+            <div class="dropdown">
+                <button class="list-group-item list-group-item-action"  type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                   <b>First Semester</b>
+                </button>
+                <div class="dropdown-menu" aria-labelledby="Subjects">
+                    <a class="dropdown-item" href="#">Engineering Mathematics I</a>
+                    <a class="dropdown-item" href="#">Engineering Chemistry</a>
+                    <a class="dropdown-item" href="#">Foundations of computer science</a>
+                    <a class="dropdown-item" href="#">Foundations of Electronics Engineering</a>
+                    <a class="dropdown-item" href="#">Engineering Mechanics</a>
+                    <a class="dropdown-item" href="#">Communicative English</a>
+                    <a class="dropdown-item" href="#">Chemistry Lab</a>
+                    <a class="dropdown-item" href="#">Foundations of computer programming lab</a>
+                </div>
+            	</div>
+            <div class="dropdown">
+                <button class="list-group-item list-group-item-action" type="button"  id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <b></a>Second Semester</b>
+                </button>
+                <div class="dropdown-menu" aria-labelledby="SEMESTERS">
+                    <a class="dropdown-item" href="#">Engineering mathematicsII </a>
+                    <a class="dropdown-item" href="#">Engineering Physics</a>
+                    <a class="dropdown-item" href="#">Computer Aided Engineering drawing</a>
+                    <a class="dropdown-item" href="#">Foundations and Electrical engineering</a>
+                    <a class="dropdown-item" href="#">Foundations of mechanical Engineering</a>
+                    <a class="dropdown-item" href="#">Kannada</a>
+                    <a class="dropdown-item" href="#">Awareness to computer concepts</a>
+                    <a class="dropdown-item" href="#">Physics Lab</a>
+                    <a class="dropdown-item" href="#">Worshop Practise</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button  class="list-group-item list-group-item-action" type="button" " id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <b>Third Semester</b>
+                </button>
+                <div class="dropdown-menu" aria-labelledby="SEMESTERS">
+                    <a class="dropdown-item" href="#">Architectural design III</a>
+                    <a class="dropdown-item" href="#">Building materials and construction III</a>
+                    <a class="dropdown-item" href="#">Computer Applications I</a>
+                    <a class="dropdown-item" href="#">Structural systems and behaviour III</a>
+                    <a class="dropdown-item" href="#">Climate responsive architecture</a>
+                    <a class="dropdown-item" href="#">History of architecture III</a>
+                    <a class="dropdown-item" href="#">Building services I</a>
+                    <a class="dropdown-item" href="#">Surveying and levelling</a>
+                    <a class="dropdown-item" href="#">Study tour I</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button  class="list-group-item list-group-item-action" type="button"  id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <b>Fourth Semester</b>
+                </button>
+                <div class="dropdown-menu" aria-labelledby="SEMESTERS">
+                    <a class="dropdown-item" href="#">Architectural design IV</a>
+                    <a class="dropdown-item" href="#">Building materials and construction IV</a>
+                    <a class="dropdown-item" href="#">Computer Applications II</a>
+                    <a class="dropdown-item" href="#">Structural systems and behaviour IV</a>
+                    <a class="dropdown-item" href="#">Human settlements and vernacular architecture</a>
+                    <a class="dropdown-item" href="#">History of architecture IV</a>
+                    <a class="dropdown-item" href="#">Building Services II</a>
+                    <a class="dropdown-item" href="#">Socially and economics</a>
+                    <a class="dropdown-item" href="#">Personality development skills</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="list-group-item list-group-item-action" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <b>Fifth Semester</b>
+                </button>
+                <div class="dropdown-menu" aria-labelledby="SEMESTERS">
+                    <a class="dropdown-item" href="#">Architectural design V</a>
+                    <a class="dropdown-item" href="#">Building materials and construction V</a>
+                    <a class="dropdown-item" href="#">Computer Applications III</a>
+                    <a class="dropdown-item" href="#">Landscape architecture</a>
+                    <a class="dropdown-item" href="#">History of architecture V</a>
+                    <a class="dropdown-item" href="#">Building estimation and specification</a>
+                    <a class="dropdown-item" href="#">Building Services III</a>
+		    <a class="dropdown-item" href="#">Structural systems and behaviour V</a> 
+                   <a class="dropdown-item" href="#">Study Tour II</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button  class="list-group-item list-group-item-action" type="button"  id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <b>Sixth Semester</b>
+                </button>
+                <div class="dropdown-menu" aria-labelledby="SEMESTERS">
+                    <a class="dropdown-item" href="#">Architectural design VI</a>
+                    <a class="dropdown-item" href="#">Working Drawing </a>
+                    <a class="dropdown-item" href="#">Interior Design</a>
+                    <a class="dropdown-item" href="#">History of architecture VI</a>
+                    <a class="dropdown-item" href="#">Sociology and economics</a>
+                    <a class="dropdown-item" href="#">Building services IV</a>
+                    <a class="dropdown-item" href="#">Elective I</a>
+                    <a class="dropdown-item" href="#">Constitution indian and professional ethics</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button  class="list-group-item list-group-item-action" type="button"  id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <b>Seventh Semester</b>
+                </button>
+                <div class="dropdown-menu" aria-labelledby="SEMESTERS">
+                    <a class="dropdown-item" href="#">Architectural design VII</a>
+                    <a class="dropdown-item" href="#">Eathquake resistant structures</a>
+                    <a class="dropdown-item" href="#">Research skills and project introduction</a>
+                    <a class="dropdown-item" href="#">Energy conscious architecture</a>
+                    <a class="dropdown-item" href="#">Proffesional Practise</a>
+                    <a class="dropdown-item" href="#">Urban and regional planning</a>
+                    <a class="dropdown-item" href="#">Elective II</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button  class="list-group-item list-group-item-action" type="button"  id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <b>Eight Semester</b>
+                </button>
+                <div class="dropdown-menu" aria-labelledby="SEMESTERS">
+                    <a class="dropdown-item" href="#">Architectural Thesis</a>
+                    <a class="dropdown-item" href="#"Elective III</a>
+                </div>
+            </div>
+                    </li>
+       
+    </ul>
+</div>
+
+
+
+            </div>
+            <div class="dropdown">
+                <button  class="list-group-item list-group-item-action" type="button"  id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <b>Industrial Engineering and Management</b>
+                </button>
+                <div class="container">
+  <ul class="list-group">
+        <li class="list-group-item">
+            <div class="dropdown">
+                <button class="list-group-item list-group-item-action"  type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                   <b>First Semester</b>
+                </button>
+                <div class="dropdown-menu" aria-labelledby="Subjects">
+                    <a class="dropdown-item" href="#">Engineering Mathematics I</a>
+                    <a class="dropdown-item" href="#">Engineering Chemistry</a>
+                    <a class="dropdown-item" href="#">Foundations of computer science</a>
+                    <a class="dropdown-item" href="#">Foundations of Electronics Engineering</a>
+                    <a class="dropdown-item" href="#">Engineering Mechanics</a>
+                    <a class="dropdown-item" href="#">Communicative English</a>
+                    <a class="dropdown-item" href="#">Chemistry Lab</a>
+                    <a class="dropdown-item" href="#">Foundations of computer programming lab</a>
+                </div>
+            	</div>
+            <div class="dropdown">
+                <button class="list-group-item list-group-item-action" type="button"  id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <b></a>Second Semester</b>
+                </button>
+                <div class="dropdown-menu" aria-labelledby="SEMESTERS">
+                    <a class="dropdown-item" href="#">Engineering mathematicsII </a>
+                    <a class="dropdown-item" href="#">Engineering Physics</a>
+                    <a class="dropdown-item" href="#">Computer Aided Engineering drawing</a>
+                    <a class="dropdown-item" href="#">Foundations and Electrical engineering</a>
+                    <a class="dropdown-item" href="#">Foundations of mechanical Engineering</a>
+                    <a class="dropdown-item" href="#">Kannada</a>
+                    <a class="dropdown-item" href="#">Awareness to computer concepts</a>
+                    <a class="dropdown-item" href="#">Physics Lab</a>
+                    <a class="dropdown-item" href="#">Worshop Practise</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button  class="list-group-item list-group-item-action" type="button" " id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <b>Third Semester</b>
+                </button>
+                <div class="dropdown-menu" aria-labelledby="SEMESTERS">
+                    <a class="dropdown-item" href="#">Architectural design III</a>
+                    <a class="dropdown-item" href="#">Building materials and construction III</a>
+                    <a class="dropdown-item" href="#">Computer Applications I</a>
+                    <a class="dropdown-item" href="#">Structural systems and behaviour III</a>
+                    <a class="dropdown-item" href="#">Climate responsive architecture</a>
+                    <a class="dropdown-item" href="#">History of architecture III</a>
+                    <a class="dropdown-item" href="#">Building services I</a>
+                    <a class="dropdown-item" href="#">Surveying and levelling</a>
+                    <a class="dropdown-item" href="#">Study tour I</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button  class="list-group-item list-group-item-action" type="button"  id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <b>Fourth Semester</b>
+                </button>
+                <div class="dropdown-menu" aria-labelledby="SEMESTERS">
+                    <a class="dropdown-item" href="#">Architectural design IV</a>
+                    <a class="dropdown-item" href="#">Building materials and construction IV</a>
+                    <a class="dropdown-item" href="#">Computer Applications II</a>
+                    <a class="dropdown-item" href="#">Structural systems and behaviour IV</a>
+                    <a class="dropdown-item" href="#">Human settlements and vernacular architecture</a>
+                    <a class="dropdown-item" href="#">History of architecture IV</a>
+                    <a class="dropdown-item" href="#">Building Services II</a>
+                    <a class="dropdown-item" href="#">Socially and economics</a>
+                    <a class="dropdown-item" href="#">Personality development skills</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="list-group-item list-group-item-action" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <b>Fifth Semester</b>
+                </button>
+                <div class="dropdown-menu" aria-labelledby="SEMESTERS">
+                    <a class="dropdown-item" href="#">Architectural design V</a>
+                    <a class="dropdown-item" href="#">Building materials and construction V</a>
+                    <a class="dropdown-item" href="#">Computer Applications III</a>
+                    <a class="dropdown-item" href="#">Landscape architecture</a>
+                    <a class="dropdown-item" href="#">History of architecture V</a>
+                    <a class="dropdown-item" href="#">Building estimation and specification</a>
+                    <a class="dropdown-item" href="#">Building Services III</a>
+		    <a class="dropdown-item" href="#">Structural systems and behaviour V</a> 
+                   <a class="dropdown-item" href="#">Study Tour II</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button  class="list-group-item list-group-item-action" type="button"  id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <b>Sixth Semester</b>
+                </button>
+                <div class="dropdown-menu" aria-labelledby="SEMESTERS">
+                    <a class="dropdown-item" href="#">Architectural design VI</a>
+                    <a class="dropdown-item" href="#">Working Drawing </a>
+                    <a class="dropdown-item" href="#">Interior Design</a>
+                    <a class="dropdown-item" href="#">History of architecture VI</a>
+                    <a class="dropdown-item" href="#">Sociology and economics</a>
+                    <a class="dropdown-item" href="#">Building services IV</a>
+                    <a class="dropdown-item" href="#">Elective I</a>
+                    <a class="dropdown-item" href="#">Constitution indian and professional ethics</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button  class="list-group-item list-group-item-action" type="button"  id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <b>Seventh Semester</b>
+                </button>
+                <div class="dropdown-menu" aria-labelledby="SEMESTERS">
+                    <a class="dropdown-item" href="#">Architectural design VII</a>
+                    <a class="dropdown-item" href="#">Eathquake resistant structures</a>
+                    <a class="dropdown-item" href="#">Research skills and project introduction</a>
+                    <a class="dropdown-item" href="#">Energy conscious architecture</a>
+                    <a class="dropdown-item" href="#">Proffesional Practise</a>
+                    <a class="dropdown-item" href="#">Urban and regional planning</a>
+                    <a class="dropdown-item" href="#">Elective II</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button  class="list-group-item list-group-item-action" type="button"  id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <b>Eight Semester</b>
+                </button>
+                <div class="dropdown-menu" aria-labelledby="SEMESTERS">
+                    <a class="dropdown-item" href="#">Architectural Thesis</a>
+                    <a class="dropdown-item" href="#"Elective III</a>
+                </div>
+            </div>
+                    </li>
+       
+    </ul>
+</div>
+
+
+
+            </div>
+            <div class="dropdown">
+                <button  class="list-group-item list-group-item-action" type="button"  id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <b>Mechanical Engineering</b>
+                </button>
+                <div class="container">
+  <ul class="list-group">
+        <li class="list-group-item">
+            <div class="dropdown">
+                <button class="list-group-item list-group-item-action"  type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                   <b>First Semester</b>
+                </button>
+                <div class="dropdown-menu" aria-labelledby="Subjects">
+                    <a class="dropdown-item" href="#">Engineering Mathematics I</a>
+                    <a class="dropdown-item" href="#">Engineering Chemistry</a>
+                    <a class="dropdown-item" href="#">Foundations of computer science</a>
+                    <a class="dropdown-item" href="#">Foundations of Electronics Engineering</a>
+                    <a class="dropdown-item" href="#">Engineering Mechanics</a>
+                    <a class="dropdown-item" href="#">Communicative English</a>
+                    <a class="dropdown-item" href="#">Chemistry Lab</a>
+                    <a class="dropdown-item" href="#">Foundations of computer programming lab</a>
+                </div>
+            	</div>
+            <div class="dropdown">
+                <button class="list-group-item list-group-item-action" type="button"  id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <b></a>Second Semester</b>
+                </button>
+                <div class="dropdown-menu" aria-labelledby="SEMESTERS">
+                    <a class="dropdown-item" href="#">Engineering mathematicsII </a>
+                    <a class="dropdown-item" href="#">Engineering Physics</a>
+                    <a class="dropdown-item" href="#">Computer Aided Engineering drawing</a>
+                    <a class="dropdown-item" href="#">Foundations and Electrical engineering</a>
+                    <a class="dropdown-item" href="#">Foundations of mechanical Engineering</a>
+                    <a class="dropdown-item" href="#">Kannada</a>
+                    <a class="dropdown-item" href="#">Awareness to computer concepts</a>
+                    <a class="dropdown-item" href="#">Physics Lab</a>
+                    <a class="dropdown-item" href="#">Worshop Practise</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button  class="list-group-item list-group-item-action" type="button" " id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <b>Third Semester</b>
+                </button>
+                <div class="dropdown-menu" aria-labelledby="SEMESTERS">
+                    <a class="dropdown-item" href="#">Architectural design III</a>
+                    <a class="dropdown-item" href="#">Building materials and construction III</a>
+                    <a class="dropdown-item" href="#">Computer Applications I</a>
+                    <a class="dropdown-item" href="#">Structural systems and behaviour III</a>
+                    <a class="dropdown-item" href="#">Climate responsive architecture</a>
+                    <a class="dropdown-item" href="#">History of architecture III</a>
+                    <a class="dropdown-item" href="#">Building services I</a>
+                    <a class="dropdown-item" href="#">Surveying and levelling</a>
+                    <a class="dropdown-item" href="#">Study tour I</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button  class="list-group-item list-group-item-action" type="button"  id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <b>Fourth Semester</b>
+                </button>
+                <div class="dropdown-menu" aria-labelledby="SEMESTERS">
+                    <a class="dropdown-item" href="#">Architectural design IV</a>
+                    <a class="dropdown-item" href="#">Building materials and construction IV</a>
+                    <a class="dropdown-item" href="#">Computer Applications II</a>
+                    <a class="dropdown-item" href="#">Structural systems and behaviour IV</a>
+                    <a class="dropdown-item" href="#">Human settlements and vernacular architecture</a>
+                    <a class="dropdown-item" href="#">History of architecture IV</a>
+                    <a class="dropdown-item" href="#">Building Services II</a>
+                    <a class="dropdown-item" href="#">Socially and economics</a>
+                    <a class="dropdown-item" href="#">Personality development skills</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="list-group-item list-group-item-action" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <b>Fifth Semester</b>
+                </button>
+                <div class="dropdown-menu" aria-labelledby="SEMESTERS">
+                    <a class="dropdown-item" href="#">Architectural design V</a>
+                    <a class="dropdown-item" href="#">Building materials and construction V</a>
+                    <a class="dropdown-item" href="#">Computer Applications III</a>
+                    <a class="dropdown-item" href="#">Landscape architecture</a>
+                    <a class="dropdown-item" href="#">History of architecture V</a>
+                    <a class="dropdown-item" href="#">Building estimation and specification</a>
+                    <a class="dropdown-item" href="#">Building Services III</a>
+		    <a class="dropdown-item" href="#">Structural systems and behaviour V</a> 
+                   <a class="dropdown-item" href="#">Study Tour II</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button  class="list-group-item list-group-item-action" type="button"  id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <b>Sixth Semester</b>
+                </button>
+                <div class="dropdown-menu" aria-labelledby="SEMESTERS">
+                    <a class="dropdown-item" href="#">Architectural design VI</a>
+                    <a class="dropdown-item" href="#">Working Drawing </a>
+                    <a class="dropdown-item" href="#">Interior Design</a>
+                    <a class="dropdown-item" href="#">History of architecture VI</a>
+                    <a class="dropdown-item" href="#">Sociology and economics</a>
+                    <a class="dropdown-item" href="#">Building services IV</a>
+                    <a class="dropdown-item" href="#">Elective I</a>
+                    <a class="dropdown-item" href="#">Constitution indian and professional ethics</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button  class="list-group-item list-group-item-action" type="button"  id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <b>Seventh Semester</b>
+                </button>
+                <div class="dropdown-menu" aria-labelledby="SEMESTERS">
+                    <a class="dropdown-item" href="#">Architectural design VII</a>
+                    <a class="dropdown-item" href="#">Eathquake resistant structures</a>
+                    <a class="dropdown-item" href="#">Research skills and project introduction</a>
+                    <a class="dropdown-item" href="#">Energy conscious architecture</a>
+                    <a class="dropdown-item" href="#">Proffesional Practise</a>
+                    <a class="dropdown-item" href="#">Urban and regional planning</a>
+                    <a class="dropdown-item" href="#">Elective II</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button  class="list-group-item list-group-item-action" type="button"  id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <b>Eight Semester</b>
+                </button>
+                <div class="dropdown-menu" aria-labelledby="SEMESTERS">
+                    <a class="dropdown-item" href="#">Architectural Thesis</a>
+                    <a class="dropdown-item" href="#"Elective III</a>
+                </div>
+            </div>
+                    </li>
+       
+    </ul>
+</div>
+
+
+
+            </div>
+	 <div class="dropdown">
+                <button class="list-group-item list-group-item-action" type="button"  id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <b>Telecommunication Engineering</b>
+                </button>
+                <div class="container">
+  <ul class="list-group">
+        <li class="list-group-item">
+            <div class="dropdown">
+                <button class="list-group-item list-group-item-action"  type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                   <b>First Semester</b>
+                </button>
+                <div class="dropdown-menu" aria-labelledby="Subjects">
+                   <a class="dropdown-item" href="#">Engineering Mathematics I</a>
+                    <a class="dropdown-item" href="#">Engineering Chemistry</a>
+                    <a class="dropdown-item" href="#">Foundations of computer science</a>
+                    <a class="dropdown-item" href="#">Foundations of Electronics Engineering</a>
+                    <a class="dropdown-item" href="#">Engineering Mechanics</a>
+                    <a class="dropdown-item" href="#">Communicative English</a>
+                    <a class="dropdown-item" href="#">Chemistry Lab</a>
+                    <a class="dropdown-item" href="#">Foundations of computer programming lab</a>
+                </div>
+            	</div>
+            <div class="dropdown">
+                <button class="list-group-item list-group-item-action" type="button"  id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <b></a>Second Semester</b>
+                </button>
+                <div class="dropdown-menu" aria-labelledby="SEMESTERS">
+                   <a class="dropdown-item" href="#">Engineering mathematicsII </a>
+                    <a class="dropdown-item" href="#">Engineering Physics</a>
+                    <a class="dropdown-item" href="#">Computer Aided Engineering drawing</a>
+                    <a class="dropdown-item" href="#">Foundations and Electrical engineering</a>
+                    <a class="dropdown-item" href="#">Foundations of mechanical Engineering</a>
+                    <a class="dropdown-item" href="#">Kannada</a>
+                    <a class="dropdown-item" href="#">Awareness to computer concepts</a>
+                    <a class="dropdown-item" href="#">Physics Lab</a>
+                    <a class="dropdown-item" href="#">Worshop Practise</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button  class="list-group-item list-group-item-action" type="button" " id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <b>Third Semester</b>
+                </button>
+                <div class="dropdown-menu" aria-labelledby="SEMESTERS">
+                    <a class="dropdown-item" href="#">Architectural design III</a>
+                    <a class="dropdown-item" href="#">Building materials and construction III</a>
+                    <a class="dropdown-item" href="#">Computer Applications I</a>
+                    <a class="dropdown-item" href="#">Structural systems and behaviour III</a>
+                    <a class="dropdown-item" href="#">Climate responsive architecture</a>
+                    <a class="dropdown-item" href="#">History of architecture III</a>
+                    <a class="dropdown-item" href="#">Building services I</a>
+                    <a class="dropdown-item" href="#">Surveying and levelling</a>
+                    <a class="dropdown-item" href="#">Study tour I</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button  class="list-group-item list-group-item-action" type="button"  id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <b>Fourth Semester</b>
+                </button>
+                <div class="dropdown-menu" aria-labelledby="SEMESTERS">
+                    <a class="dropdown-item" href="#">Architectural design IV</a>
+                    <a class="dropdown-item" href="#">Building materials and construction IV</a>
+                    <a class="dropdown-item" href="#">Computer Applications II</a>
+                    <a class="dropdown-item" href="#">Structural systems and behaviour IV</a>
+                    <a class="dropdown-item" href="#">Human settlements and vernacular architecture</a>
+                    <a class="dropdown-item" href="#">History of architecture IV</a>
+                    <a class="dropdown-item" href="#">Building Services II</a>
+                    <a class="dropdown-item" href="#">Socially and economics</a>
+                    <a class="dropdown-item" href="#">Personality development skills</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="list-group-item list-group-item-action" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <b>Fifth Semester</b>
+                </button>
+                <div class="dropdown-menu" aria-labelledby="SEMESTERS">
+                    <a class="dropdown-item" href="#">Architectural design V</a>
+                    <a class="dropdown-item" href="#">Building materials and construction V</a>
+                    <a class="dropdown-item" href="#">Computer Applications III</a>
+                    <a class="dropdown-item" href="#">Landscape architecture</a>
+                    <a class="dropdown-item" href="#">History of architecture V</a>
+                    <a class="dropdown-item" href="#">Building estimation and specification</a>
+                    <a class="dropdown-item" href="#">Building Services III</a>
+		    <a class="dropdown-item" href="#">Structural systems and behaviour V</a> 
+                   <a class="dropdown-item" href="#">Study Tour II</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button  class="list-group-item list-group-item-action" type="button"  id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <b>Sixth Semester</b>
+                </button>
+                <div class="dropdown-menu" aria-labelledby="SEMESTERS">
+                    <a class="dropdown-item" href="#">Architectural design VI</a>
+                    <a class="dropdown-item" href="#">Working Drawing </a>
+                    <a class="dropdown-item" href="#">Interior Design</a>
+                    <a class="dropdown-item" href="#">History of architecture VI</a>
+                    <a class="dropdown-item" href="#">Sociology and economics</a>
+                    <a class="dropdown-item" href="#">Building services IV</a>
+                    <a class="dropdown-item" href="#">Elective I</a>
+                    <a class="dropdown-item" href="#">Constitution indian and professional ethics</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button  class="list-group-item list-group-item-action" type="button"  id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <b>Seventh Semester</b>
+                </button>
+                <div class="dropdown-menu" aria-labelledby="SEMESTERS">
+                    <a class="dropdown-item" href="#">Architectural design VII</a>
+                    <a class="dropdown-item" href="#">Eathquake resistant structures</a>
+                    <a class="dropdown-item" href="#">Research skills and project introduction</a>
+                    <a class="dropdown-item" href="#">Energy conscious architecture</a>
+                    <a class="dropdown-item" href="#">Proffesional Practise</a>
+                    <a class="dropdown-item" href="#">Urban and regional planning</a>
+                    <a class="dropdown-item" href="#">Elective II</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button  class="list-group-item list-group-item-action" type="button"  id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <b>Eight Semester</b>
+                </button>
+                <div class="dropdown-menu" aria-labelledby="SEMESTERS">
+                    <a class="dropdown-item" href="#">Architectural Thesis</a>
+                    <a class="dropdown-item" href="#"Elective III</a>
+                </div>
+            </div>
+                    </li>
+       
+    </ul>
+</div>
+
+
+
+            </div>
+
+        </li>
+       
+    </ul>
+</div>
+
+</div>
+</div>
+</body>
+</html>
+
+
